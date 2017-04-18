@@ -88,6 +88,7 @@ font-family: 'Poiret One', cursive;
     font-family: 'Poiret One', cursive;
     color: black;
     margin-top: 30px;
+    visibility: visible;
 }
 
 .cerrar {
