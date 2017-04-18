@@ -8,6 +8,8 @@ var textoHistoria = document.getElementById("textoHistoria");
 var botonesCerrar = document.getElementsByClassName("cerrar"); // spans 
 var imagenes = document.getElementsByClassName("pandas");
 console.log(botonesCerrar); 
+var divs = document.getElementsByTagName("div"); 
+console.log(divs); 
 
 
 botonOrigen.addEventListener("click", mostrartextoOrigen);
@@ -15,6 +17,8 @@ botonOrigen.addEventListener("dblclick", ocultartextoOrigen);
 botonHistoria.addEventListener("click", mostrartextoHistoria);
 botonHistoria.addEventListener("dblclick", ocultartextoHistoria);
 botonRestaurar.addEventListener("click", restaurarImagenes);
+
+
 
 
 function mostrartextoOrigen () {
@@ -35,11 +39,14 @@ function ocultartextoHistoria () {
 
 
 
-function ocultarImagen (boton) {
-    
-  
-      
-}
+function ocultarImagen (section) { // Está mal 
+    if (section.style.display =="none"){
+        section.style.display=""}
+    else{
+     section.style.display="none"} 
+ }      
+
+
 
 function restaurarImagenes () {
     for (var i =0; i<imagenes.length; i++) {
