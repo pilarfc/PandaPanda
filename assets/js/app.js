@@ -5,6 +5,10 @@ var botonRestaurar = document.getElementById("botonRestaurar");
 var textoOrigen = document.getElementById("textoOrigen");
 var textoHistoria = document.getElementById("textoHistoria"); 
 
+var botonCerrar = document.getElementsByClassName("cerrar"); 
+var imagenes = document.getElementsByClassName("pandas");
+console.log(botonCerrar);
+console.log(imagenes); 
 
 botonOrigen.addEventListener("click", mostrartextoOrigen);
 botonOrigen.addEventListener("dblclick", ocultartextoOrigen); 
@@ -32,6 +36,6 @@ function ocultartextoHistoria () {
 
 
 function borrarImagen () {
-document.getElementsByClassName("pandas").style.visibility = "hidden";
+botonCerrar.style.visibility = "hidden";
 }
 
