@@ -40,7 +40,7 @@ function ocultartextoHistoria () {
 
 
 function ocultarImagen (tache) {  
-    var padre = tache.parentNode; 
+    var padre = tache.parentNode;  // Con este parentNode tomamos todo el div completo, incluyendo imagen y tache. Le pasamos como parametro el tache.
      padre.style.display = "none"; 
  }      
 
@@ -55,13 +55,13 @@ function restaurarImagenes () {
 
 
     
-   for (i=0; i<botonesCerrar.length; i++) {
+   for (i=0; i<botonesCerrar.length; i++) {   // Este for sirve para agregarle el span a cada boton e imagen.
         botonesCerrar[i].addEventListener("click",identificarSpan); 
     }
 
 
 function identificarSpan () {
-  ocultarImagen(this); 
+  ocultarImagen(this);  // este this nos está diciendo que al span tenemos que asignarle la funcion ocultarImagen. 
 }
 
 
