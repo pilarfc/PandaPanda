@@ -51,7 +51,9 @@ a:hover {
   display: inline;
   margin-left: 115px; 
   margin-top: 50px;
+  visibility: visible; 
 }
+
 
 img {
   width: 15%;
@@ -88,10 +90,8 @@ font-family: 'Poiret One', cursive;
     margin-top: 30px;
 }
 
-.close {
+.cerrar {
   position: absolute;
-  /*top: 140px;
-  left: 360px;*/
   color: #f1f1f1;
   font-size: 40px;
   font-weight: bold;
@@ -99,10 +99,10 @@ font-family: 'Poiret One', cursive;
   color: black;
 }
 
-.close:hover,
-.close:focus {
-   color: #bbb;
-   text-decoration: none;
+
+.cerrar:hover,
+.cerrar:focus {
+   color: #878787;
    cursor: pointer;
  }
 
