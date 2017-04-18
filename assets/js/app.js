@@ -39,19 +39,31 @@ function ocultartextoHistoria () {
 
 
 
-function ocultarImagen (section) { // Está mal 
-    if (section.style.display =="none"){
-        section.style.display=""}
-    else{
-     section.style.display="none"} 
+function ocultarImagen (tache) {  
+    var padre = tache.parentNode; 
+     padre.style.display = "none"; 
  }      
 
 
 
+
 function restaurarImagenes () {
-    for (var i =0; i<imagenes.length; i++) {
-  imagenes[i].style.visibility = "visible";  // si funciona, si cambias a hidden, se nota. 
+    for (var i =0; i<divs.length; i++) {
+  divs[i].style.display = "inline";  
  }
 }
+
+
+    
+   for (i=0; i<botonesCerrar.length; i++) {
+        botonesCerrar[i].addEventListener("click",identificarSpan); 
+    }
+
+
+function identificarSpan () {
+  ocultarImagen(this); 
+}
+
+
 
 
