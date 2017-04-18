@@ -5,16 +5,16 @@ var botonRestaurar = document.getElementById("botonRestaurar");
 var textoOrigen = document.getElementById("textoOrigen");
 var textoHistoria = document.getElementById("textoHistoria"); 
 
-var botonCerrar = document.getElementsByClassName("cerrar"); 
+var botonesCerrar = document.getElementsByClassName("cerrar"); // spans 
 var imagenes = document.getElementsByClassName("pandas");
-console.log(botonCerrar);
-console.log(imagenes); 
+console.log(botonesCerrar); 
+
 
 botonOrigen.addEventListener("click", mostrartextoOrigen);
 botonOrigen.addEventListener("dblclick", ocultartextoOrigen); 
 botonHistoria.addEventListener("click", mostrartextoHistoria);
 botonHistoria.addEventListener("dblclick", ocultartextoHistoria);
-
+botonRestaurar.addEventListener("click", restaurarImagenes);
 
 
 function mostrartextoOrigen () {
@@ -35,7 +35,16 @@ function ocultartextoHistoria () {
 
 
 
-function borrarImagen () {
-botonCerrar.style.visibility = "hidden";
+function ocultarImagen (boton) {
+    
+  
+      
 }
+
+function restaurarImagenes () {
+    for (var i =0; i<imagenes.length; i++) {
+  imagenes[i].style.visibility = "visible";  // si funciona, si cambias a hidden, se nota. 
+ }
+}
+
 
