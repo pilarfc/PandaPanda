@@ -1,0 +1,108 @@
+*{
+margin: 0px;
+}
+
+body {
+  background-color: white;
+}
+
+header {
+  font-family: 'Fontdiner Swanky', cursive;
+  background: black;
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  padding-bottom: 15px;
+  padding-top: 10px;
+}
+
+ul {
+   background: #A9F5E1;
+}
+
+li {
+  font-size: 1.5em;
+  display: inline-block;
+  padding: 25px;
+  list-style: none;
+  color: black;
+}
+
+li a {
+  font-family: 'VT323', monospace;
+  font-family: 'Sacramento', cursive;
+  font-size: 25px;
+  text-align: center;
+  padding-left: 125px;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 40px;
+  text-align: center;
+}
+
+a:hover {
+    background-color: #C4FFE0;
+}
+
+
+
+.pandas {
+  display: inline;
+  margin-left: 115px; 
+  margin-top: 50px;
+}
+
+img {
+  width: 15%;
+  margin-top: 20px;
+}
+
+
+.botonSecciones {
+  display: block;
+  margin-top: 20px;
+  margin-left: 60px;
+}
+
+.botonSecciones div {
+  background-color: #A9F5E1;
+  text-align: center;
+  color: #A9F5E13;
+  font-family: 'Fontdiner Swanky', cursive;
+font-family: 'Poiret One', cursive;
+  padding: 10px 130px;
+  display: inline-block;
+  margin-left: 80px;
+  position: relative;
+}
+
+.texto {
+    display: inline-block;
+    margin-left: 125px;
+    width: 500px;
+    text-align: justify;
+    font-family: 'Fontdiner Swanky', cursive;
+    font-family: 'Poiret One', cursive;
+    color: black;
+    margin-top: 30px;
+}
+
+.close {
+  position: absolute;
+  /*top: 140px;
+  left: 360px;*/
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  color: black;
+}
+
+.close:hover,
+.close:focus {
+   color: #bbb;
+   text-decoration: none;
+   cursor: pointer;
+ }
+
