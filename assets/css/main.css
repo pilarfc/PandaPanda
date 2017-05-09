@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  font-family: 'Fontdiner Swanky', cursive;
+  font-family: 'Cabin Sketch', cursive;
   background: black;
   color: white;
   text-align: center;
@@ -49,9 +49,9 @@ a:hover {
 
 .pandas {
   display: inline;
-  margin-left: 115px; 
+  margin-left: 115px;
   margin-top: 50px;
-  visibility: visible; 
+  visibility: visible;
 }
 
 
@@ -72,11 +72,12 @@ img {
   text-align: center;
   color: #A9F5E13;
   font-family: 'Fontdiner Swanky', cursive;
-font-family: 'Poiret One', cursive;
+  font-family: 'Poiret One', cursive;
   padding: 10px 130px;
   display: inline-block;
   margin-left: 80px;
   position: relative;
+  cursor: pointer;
 }
 
 .texto {
@@ -106,4 +107,3 @@ font-family: 'Poiret One', cursive;
    color: #878787;
    cursor: pointer;
  }
-
